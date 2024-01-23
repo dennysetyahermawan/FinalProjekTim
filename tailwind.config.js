@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         primary: "#1f83cb",
         secondary: "#1f83cba8",
+        blue: "#FFF8E3",
       },
       fontFamily: {
         "great-vibes": ["Great Vibes", "cursive"],
