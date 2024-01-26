@@ -58,28 +58,28 @@
 
 
     <!-- Main Start -->
-    <main class="px-5 sm:px-10 lg:px-24 pt-32">
-        <h1 class="flex items-center gap-3 text-2xl text-gray-800">
+    <main class="px-5 sm:px-10 lg:px-24 pt-32 pb-14 bg-gray-800">
+        <h1 class="flex items-center gap-3 text-2xl text-neutral-100">
             <hr class="w-14 border-t-2 border-primary">
             Service Cart
         </h1>
 
         <!-- Table Cart -->
         <section class="overflow-x-auto mt-10">
-            <table class="w-max lg:w-[80vw] border-collapse border ">
+            <table class="w-max lg:w-[80vw] border-collapse border text-neutral-100">
                 <thead>
                     <tr>
-                        <th class="p-5 text-neutral-50 text-left text-xl bg-primary">#</th>
-                        <th class="p-5 text-neutral-50 text-left text-xl bg-primary">Service</th>
-                        <th class="p-5 text-neutral-50 text-left text-xl bg-primary">Product</th>
-                        <th class="p-5 text-neutral-50 text-left text-xl bg-primary">Price</th>
-                        <th class="p-5 text-neutral-50 text-left text-xl bg-primary">Quantity</th>
-                        <th class="p-5 text-neutral-50 text-left text-xl bg-primary">Total</th>
-                        <th class="p-5 text-neutral-50 text-center text-xl bg-primary">Remove</th>
+                        <th class="p-5 text-left text-xl bg-primary">#</th>
+                        <th class="p-5 text-left text-xl bg-primary">Service</th>
+                        <th class="p-5 text-left text-xl bg-primary">Product</th>
+                        <th class="p-5 text-left text-xl bg-primary">Price</th>
+                        <th class="p-5 text-center text-xl bg-primary">Quantity</th>
+                        <th class="p-5 text-left text-xl bg-primary">Total</th>
+                        <th class="p-5 text-center text-xl bg-primary">Remove</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="even:bg-slate-200">
+                    <tr class="even:bg-gray-700">
                         <td class="p-5 text-left">1.</td>
                         <td class="p-5 text-left">CLeaning</td>
                         <td class="p-5 text-left whitespace-nowrap">Sepatu hitam</td>
@@ -88,13 +88,13 @@
                         <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
                         <td class="p-5 text-center">
                             <button type="button"
-                                class="px-5 py-2 bg-primary hover:bg-secondary text-neutral-50 hover:shadow-lg rounded-lg">
+                                class="px-5 py-2 bg-primary hover:bg-secondary hover:shadow-lg rounded-lg">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                         </td>
                     </tr>
 
-                    <tr class="even:bg-slate-200">
+                    <tr class="even:bg-gray-700">
                         <td class="p-5 text-left">2.</td>
                         <td class="p-5 text-left">CLeaning</td>
                         <td class="p-5 text-left whitespace-nowrap">Sepatu hitam</td>
@@ -103,13 +103,13 @@
                         <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
                         <td class="p-5 text-center">
                             <button type="button"
-                                class="px-5 py-2 bg-primary hover:bg-secondary text-neutral-50 hover:shadow-lg rounded-lg">
+                                class="px-5 py-2 bg-primary hover:bg-secondary hover:shadow-lg rounded-lg">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                         </td>
                     </tr>
 
-                    <tr class="even:bg-slate-200">
+                    <tr class="even:bg-gray-700">
                         <td class="p-5 text-left">3.</td>
                         <td class="p-5 text-left">CLeaning</td>
                         <td class="p-5 text-left whitespace-nowrap">Sepatu hitam</td>
@@ -118,7 +118,7 @@
                         <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
                         <td class="p-5 text-center">
                             <button type="button"
-                                class="px-5 py-2 bg-primary hover:bg-secondary text-neutral-50 hover:shadow-lg rounded-lg">
+                                class="px-5 py-2 bg-primary hover:bg-secondary hover:shadow-lg rounded-lg">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                         </td>
@@ -129,26 +129,26 @@
 
         <!-- Table Total Cart -->
         <section class="mt-14 flex flex-col sm:flex-row sm:items-center gap-10 sm:gap-28">
-            <table class="w-1/2 border-collapse border">
+            <table class="w-1/2 border-collapse border text-neutral-100">
                 <thead>
                     <tr>
-                        <th colspan="2" class="p-5 text-neutral-50 text-left text-xl bg-primary">Cart Total</th>
+                        <th colspan="2" class="p-5 text-left text-xl bg-primary">Cart Total</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="even:bg-slate-200">
+                    <tr class="even:bg-gray-700">
                         <td class="p-5 text-left">Subtotal</td>
                         <td class="p-5 text-right whitespace-nowrap">RP 300.000,00</td>
                     </tr>
 
-                    <tr class="even:bg-slate-200">
+                    <tr class="even:bg-gray-700">
                         <td class="p-5 text-left">Ongkir</td>
                         <td class="p-5 text-right whitespace-nowrap">RP 100.000,00</td>
                     </tr>
 
                 </tbody>
                 <tfoot>
-                    <tr class="even:bg-slate-200">
+                    <tr class="even:bg-gray-700">
                         <td class="p-5 text-left">Sum Total</td>
                         <td class="p-5 text-right whitespace-nowrap">RP 400.000,00</td>
                     </tr>
@@ -168,7 +168,7 @@
 
 
     <!-- Footer Start -->
-    <footer class="mt-14">
+    <footer>
         <div class="bg-gray-700 py-14 px-10 lg:px-24 flex flex-col lg:flex-row gap-10">
             <div>
                 <figure class="bg-white px-7 py-4 rounded-full w-64">
