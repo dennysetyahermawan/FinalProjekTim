@@ -14,6 +14,9 @@ module.exports = {
         "great-vibes": ["Great Vibes", "cursive"],
         poppins: ["Poppins", "sans-serif"],
       },
+      backgroundImage: {
+        user: "url(../src/assets/icons/user-solid.svg)",
+      },
     },
   },
   plugins: [],
