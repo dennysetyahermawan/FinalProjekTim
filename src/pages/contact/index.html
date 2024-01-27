@@ -2,32 +2,143 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
 
-    <!-- Link Compile Tailwind -->
-    <link href="../../output.css" rel="stylesheet">
+  <!-- Link Compile Tailwind -->
+  <link href="../../output.css" rel="stylesheet" />
 
-    <!-- Link Google Font Great Vibes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Link Google Font Great Vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 
-    <!-- Link Google Font Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link Google Font Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 
-    <!-- Link CDN Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- Link CDN Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+  <!-- Header Start -->
+  <header>
+    <!-- Navbar -->
+    <nav class="fixed w-full z-40 py-5 bg-black bg-opacity-70">
+      <section class="flex justify-between w-3/4 mx-auto">
+        <figure>
+          <img src="../../assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo" class="w-40">
+        </figure>
 
-</body>
+        <ul class="hidden lg:flex gap-16 text-lg text-neutral-100">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../service/index.html">Service</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../contact/index.html" class="font-bold text-primary">Contact</a></li>
+        </ul>
+
+        <div class="font-semibold">
+          <button type="button" class="lg:hidden" onclick="handleButtonNav(event)">
+            <i class="fa-solid fa-bars sm:hidden text-neutral-100 text-3xl"></i>
+          </button>
+          <button type="button" class="hidden lg:block text-white text-lg">Login</button>
+        </div>
+      </section>
+      
+      <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
+        <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../service/index.html">Service</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="../contact/index.html" class="font-bold text-primary">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <!-- Header End -->
+
+    <main>
+      <!-- Maps -->
+      <section class="flex flex-col p-9 min-h-screen gap-10 sm:flex-row">
+        <div class="sm:w-1/2">
+          <div class="sm:m-auto sm:h-full">
+            <div class="w-full h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8221.36432965681!2d106.8099104164235!3d-6.293126568881959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8b7dcfbd9%3A0xfe981ddde10b71e5!2sharisenin.com!5e0!3m2!1sid!2sid!4v1706290087695!5m2!1sid!2sid"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side -->
+
+        <div class="sm:w-1/2 flex flex-col sm:gap-5 min-h-screen">
+          <div class="hidden sm:block w-full m-auto">
+            <img src="../../assets/logo/contact.svg" />
+          </div>
+
+          <div
+            class="w-full flex flex-col justify-center text-xs gap-6 sm:rounded-2xl sm:border sm:item sm:p-7 sm:m-auto sm:bg-cyan"
+          >
+            <h1 class="font-bold sm:text-lg">Contact us</h1>
+
+            <form action="" class="flex flex-col gap-4">
+              <div class="relative">
+                <div class="absolute top-0.5 p-2 left-1">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <input
+                  type="text"
+                  required
+                  placeholder="Enter your name"
+                  class="border rounded-2xl py-2 w-full ps-8"
+                />
+              </div>
+              <div class="relative">
+                <div class="absolute top-0.5 p-2 left-1">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <input
+                  type="email"
+                  required
+                  placeholder="Enter your email"
+                  class="border rounded-2xl py-2 w-full ps-8"
+                />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="border rounded-xl py-2 w-full ps-2 h-20"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </form>
+
+            <!-- button -->
+            <div class="flex flex-col gap-3">
+              <button
+                class="flex justify-center items-center py-2 w-full bg-dark_blue text-white rounded-2xl"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 
 </html>
+
+<script src="../../scripts/navbar.js"></script>

@@ -28,6 +28,210 @@
 
 <body>
 
+    <!-- Header Start -->
+    <header>
+        <!-- Navbar -->
+        <nav class="fixed w-full z-40 py-5 bg-black bg-opacity-70">
+            <section class="flex justify-between w-3/4 mx-auto">
+                <figure>
+                    <img src="../../assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo"
+                        class="w-40">
+                </figure>
+
+                <ul class="hidden lg:flex gap-16 text-lg text-neutral-100">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../service/index.html">Service</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+
+                <div class="font-semibold">
+                    <button type="button" class="lg:hidden" onclick="handleButtonNav(event)">
+                        <i class="fa-solid fa-bars sm:hidden text-neutral-100 text-3xl"></i>
+                    </button>
+                    <button type="button" class="hidden lg:block text-white text-lg">Login</button>
+                </div>
+            </section>
+
+            <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
+                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../service/index.html">Service</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Main Start -->
+    <main class="px-5 sm:px-10 lg:px-24 pt-32 pb-14 bg-gray-800">
+        <h1 class="flex items-center gap-3 text-2xl text-neutral-100">
+            <hr class="w-14 border-t-2 border-primary">
+            Service Cart
+        </h1>
+
+        <!-- Table Cart -->
+        <section class="overflow-x-auto mt-10">
+            <table class="w-max lg:w-[80vw] border-collapse border text-neutral-100">
+                <thead>
+                    <tr>
+                        <th class="p-5 text-left text-xl bg-primary">#</th>
+                        <th class="p-5 text-left text-xl bg-primary">Service</th>
+                        <th class="p-5 text-left text-xl bg-primary">Product</th>
+                        <th class="p-5 text-left text-xl bg-primary">Price</th>
+                        <th class="p-5 text-center text-xl bg-primary">Quantity</th>
+                        <th class="p-5 text-left text-xl bg-primary">Total</th>
+                        <th class="p-5 text-center text-xl bg-primary">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even:bg-gray-700">
+                        <td class="p-5 text-left">1.</td>
+                        <td class="p-5 text-left">CLeaning</td>
+                        <td class="p-5 text-left whitespace-nowrap">Sepatu hitam</td>
+                        <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
+                        <td class="p-5 text-center">1</td>
+                        <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
+                        <td class="p-5 text-center">
+                            <button type="button"
+                                class="px-5 py-2 bg-primary hover:bg-secondary hover:shadow-lg rounded-lg">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="even:bg-gray-700">
+                        <td class="p-5 text-left">2.</td>
+                        <td class="p-5 text-left">CLeaning</td>
+                        <td class="p-5 text-left whitespace-nowrap">Sepatu hitam</td>
+                        <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
+                        <td class="p-5 text-center">1</td>
+                        <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
+                        <td class="p-5 text-center">
+                            <button type="button"
+                                class="px-5 py-2 bg-primary hover:bg-secondary hover:shadow-lg rounded-lg">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr class="even:bg-gray-700">
+                        <td class="p-5 text-left">3.</td>
+                        <td class="p-5 text-left">CLeaning</td>
+                        <td class="p-5 text-left whitespace-nowrap">Sepatu hitam</td>
+                        <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
+                        <td class="p-5 text-center">1</td>
+                        <td class="p-5 text-left whitespace-nowrap">RP 100.000,00</td>
+                        <td class="p-5 text-center">
+                            <button type="button"
+                                class="px-5 py-2 bg-primary hover:bg-secondary hover:shadow-lg rounded-lg">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Table Total Cart -->
+        <section class="mt-14 flex flex-col sm:flex-row sm:items-center gap-10 sm:gap-28">
+            <table class="w-1/2 border-collapse border text-neutral-100">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="p-5 text-left text-xl bg-primary">Cart Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even:bg-gray-700">
+                        <td class="p-5 text-left">Subtotal</td>
+                        <td class="p-5 text-right whitespace-nowrap">RP 300.000,00</td>
+                    </tr>
+
+                    <tr class="even:bg-gray-700">
+                        <td class="p-5 text-left">Ongkir</td>
+                        <td class="p-5 text-right whitespace-nowrap">RP 100.000,00</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr class="even:bg-gray-700">
+                        <td class="p-5 text-left">Sum Total</td>
+                        <td class="p-5 text-right whitespace-nowrap">RP 400.000,00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div>
+                <a href="#" class="bg-primary hover:bg-secondary text-white lg:text-xl px-5 py-2 rounded-lg">
+                    <i class="fa-solid fa-bag-shopping me-1"></i>
+                    Checkout
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!-- Main End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="bg-gray-700 py-14 px-10 lg:px-24 flex flex-col lg:flex-row gap-10">
+            <div>
+                <figure class="bg-white px-7 py-4 rounded-full w-64">
+                    <img src="../../assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo"
+                        class="w-full">
+                </figure>
+                <p class="text-neutral-300 mt-5 lg:pe-24">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores iste aspernatur autem quaerat odit esse est provident molestias? Molestias id, ad cum
+                    obcaecati sed officia.</p>
+
+                <div class="text-4xl text-gray-700 flex gap-5 mt-5">
+                    <i class="fa-brands fa-instagram p-2 bg-neutral-300 rounded-full"></i>
+                    <i class="fa-regular fa-envelope p-2 bg-neutral-300 rounded-full"></i>
+                    <i class="fa-brands fa-whatsapp p-2 bg-neutral-300 rounded-full"></i>
+                </div>
+
+            </div>
+
+            <section class="flex flex-col sm:flex-row gap-5 sm:gap-20">
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">Company</h1>
+                    <ul class="text-neutral-300 mt-2 lg:mt-5 flex flex-col gap-2 sm:gap-5">
+                        <li><a href="#">Why Klin8</a></li>
+                        <li><a href="#"></a>Blog</li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">About</h1>
+                    <ul class="text-neutral-300 mt-2 lg:mt-5 flex flex-col gap-2 sm:gap-5">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">Meet Us</h1>
+                    <ul class="text-neutral-300 mt-2 lg:mt-5 w-3/4 flex flex-col gap-2 sm:gap-5">
+                        <li><i class="fa-brands fa-whatsapp"></i> +62 812345678</li>
+                        <li><i class="fa-regular fa-envelope"></i> info@klin8.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Goatan Street, Northen District, Pantura States
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </footer>
+    <!-- Footer End -->
+
 </body>
 
 </html>
+
+<script src="../../scripts/navbar.js"></script>
