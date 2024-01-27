@@ -28,6 +28,45 @@
 
 <body>
 
+    <!-- Header Start -->
+    <header>
+        <!-- Navbar -->
+        <nav class="fixed w-full z-40 py-5 bg-black bg-opacity-70">
+            <section class="flex justify-between w-3/4 mx-auto">
+                <figure>
+                    <img src="../../assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo"
+                        class="w-40">
+                </figure>
+
+                <ul class="hidden lg:flex gap-16 text-lg text-neutral-100">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../service/index.html">Service</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+
+                <div class="font-semibold">
+                    <button type="button" class="lg:hidden" onclick="handleButtonNav(event)">
+                        <i class="fa-solid fa-bars sm:hidden text-neutral-100 text-3xl"></i>
+                    </button>
+                    <button type="button" class="hidden lg:block text-white text-lg">Login</button>
+                </div>
+            </section>
+
+            <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
+                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../service/index.html">Service</a></li>
+                    <li><a href="../about/index.html">About</a></li>
+                    <li><a href="../contact/index.html">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+    <!-- Header End -->
+
 </body>
 
 </html>
+
+<script src="../../scripts/navbar.js"></script>

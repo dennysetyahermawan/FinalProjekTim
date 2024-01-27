@@ -32,38 +32,46 @@
     <!-- Header Start -->
     <header>
         <!-- Navbar Start -->
-        <nav class="fixed w-full z-30 py-5 bg-black bg-opacity-70">
-            <div class="flex justify-between w-3/4 mx-auto">
+        <nav class="fixed w-full z-40 py-5 bg-black bg-opacity-70">
+            <section class="flex justify-between w-3/4 mx-auto">
                 <figure>
                     <img src="./assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo" class="w-40">
                 </figure>
 
                 <ul class="hidden lg:flex gap-16 text-lg text-neutral-100">
-                    <li><a href="#" class="font-bold text-primary">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./index.html" class="font-bold text-primary">Home</a></li>
+                    <li><a href="./pages/service/index.html">Service</a></li>
+                    <li><a href="./pages/about/index.html">About</a></li>
+                    <li><a href="./pages/contact/index.html">Contact</a></li>
                 </ul>
 
                 <div class="font-semibold">
-                    <button class="lg:hidden">
+                    <button type="button" class="lg:hidden" onclick="handleButtonNav(event)">
                         <i class="fa-solid fa-bars sm:hidden text-neutral-100 text-3xl"></i>
                     </button>
-                    <button type="button" class="hidden lg:block text-neutbg-neutral-100 text-lg">Login</button>
+                    <button type="button" class="hidden lg:block text-white text-lg">Login</button>
                 </div>
-            </div>
+            </section>
+
+            <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
+                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+                    <li><a href="./index.html" class="font-bold text-primary">Home</a></li>
+                    <li><a href="./pages/service/index.html">Service</a></li>
+                    <li><a href="./pages/about/index.html">About</a></li>
+                    <li><a href="./pages/contact/index.html">Contact</a></li>
+                </ul>
+            </section>
         </nav>
         <!-- Navbar End -->
 
         <!-- Section Start -->
         <section class="relative h-screen">
-            <div
-                class="absolute z-20 flex flex-col w-full gap-24 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
+            <div class="absolute z-20 flex flex-col w-full gap-24 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
                 <header class="text-neutral-100 text-center px-5">
                     <h1 class="text-2xl sm:text-4xl xl:text-8xl font-bold">Selamat datang di loundry Klin8</h1>
                     <p class="text-lg sm:text-xl xl:text-3xl mt-2 sm:mt-5 sm:px-14 xl:px-40">
                         Kami senang Anda memilih kami untuk merawat sepatu kesayangan Anda. Kami siap memberikan layanan
-                        terbaik untuk sepatu Anda!.
+                        terbaik untuk sepatu Anda!
                     </p>
                 </header>
                 <div class="mx-auto lg:text-4xl">
@@ -328,3 +336,5 @@
 </body>
 
 </html>
+
+<script src="./scripts/navbar.js"></script>
