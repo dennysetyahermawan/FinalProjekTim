@@ -50,60 +50,77 @@
         </div>
       </section>
 
-      <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
-        <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+      <section id="navMobile" class="hidden lg:hidden mt-7 pb-5 border-t">
+        <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center py-7">
           <li><a href="../../index.html">Home</a></li>
           <li><a href="../service/index.html">Service</a></li>
           <li><a href="../about/index.html">About</a></li>
-          <li><a href="../contact/index.html" class="font-bold text-primary">Contact</a></li>
+          <li class="font-bold text-primary"><a href="../contact/index.html">Contact</a></li>
         </ul>
+
+        <div class="flex justify-between text-lg text-neutral-100 border-t px-7 sm:px-32 pt-7">
+          <a href="../auth/login/index.html" class="bg-primary hover:bg-secondary px-3 py-1">Sign In</a>
+          <a href="../auth/register/" class="border hover:text-primary px-3 py-1">Sign Up</a>
+        </div>
       </section>
     </nav>
   </header>
   <!-- Header End -->
 
-  <section class="flex flex-col sm:flex-row min-h-screen">
-    <div class="flex sm:block sm:w-1/2">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8221.36432965681!2d106.8099104164235!3d-6.293126568881959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8b7dcfbd9%3A0xfe981ddde10b71e5!2sharisenin.com!5e0!3m2!1sid!2sid!4v1706290087695!5m2!1sid!2sid"
-        style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        class="h-80 w-full sm:h-full"></iframe>
-    </div>
-    <div class="h-full flex justify-center items-center m-9 sm:m-auto sm:w-1/2">
-      <section
-        class="w-full flex flex-col text-xs gap-6 sm:rounded-2xl sm:p-7 sm:w-2/3 md:w-2/3 xl:w-2/3 sm:border-2 sm:bg-white">
-        <div>
-          <h1 class="font-bold text-lg">Contact us</h1>
+  <main>
+    <!-- Maps -->
+    <section class="flex flex-col p-9 min-h-screen gap-10 sm:flex-row">
+      <div class="sm:w-1/2">
+        <div class="sm:m-auto sm:h-full">
+          <div class="w-full h-full">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8221.36432965681!2d106.8099104164235!3d-6.293126568881959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8b7dcfbd9%3A0xfe981ddde10b71e5!2sharisenin.com!5e0!3m2!1sid!2sid!4v1706290087695!5m2!1sid!2sid"
+              style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side -->
+
+      <div class="sm:w-1/2 flex flex-col sm:gap-5 min-h-screen">
+        <div class="hidden sm:block w-full m-auto">
+          <img src="../../assets/logo/contact.svg" />
         </div>
 
-        <form action="" class="flex flex-col gap-4">
-          <div class="relative">
-            <div class="absolute top-0.5 p-2 left-1">
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <input type="text" required placeholder="Enter your name" class="border rounded-2xl py-2 w-full ps-8" />
-          </div>
-          <div class="relative">
-            <div class="absolute top-0.5 p-2 left-1">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <input type="email" required placeholder="Enter your email" class="border rounded-2xl py-2 w-full ps-8" />
-          </div>
-          <div>
-            <textarea name="message" id="message" class="border rounded-xl py-2 w-full ps-2 h-20"
-              placeholder="Message"></textarea>
-          </div>
-        </form>
+        <div
+          class="w-full flex flex-col justify-center text-xs gap-6 sm:rounded-2xl sm:border sm:item sm:p-7 sm:m-auto sm:bg-cyan">
+          <h1 class="font-bold sm:text-lg">Contact us</h1>
 
-        <!-- button -->
-        <div class="flex flex-col gap-3">
-          <button class="flex justify-center items-center py-2 w-full bg-dark_blue text-white rounded-2xl">
-            Submit
-          </button>
+          <form action="" class="flex flex-col gap-4">
+            <div class="relative">
+              <div class="absolute top-0.5 p-2 left-1">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <input type="text" required placeholder="Enter your name" class="border rounded-2xl py-2 w-full ps-8" />
+            </div>
+            <div class="relative">
+              <div class="absolute top-0.5 p-2 left-1">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <input type="email" required placeholder="Enter your email" class="border rounded-2xl py-2 w-full ps-8" />
+            </div>
+            <div>
+              <textarea name="message" id="message" class="border rounded-xl py-2 w-full ps-2 h-20"
+                placeholder="Message"></textarea>
+            </div>
+          </form>
+
+          <!-- button -->
+          <div class="flex flex-col gap-3">
+            <button class="flex justify-center items-center py-2 w-full bg-dark_blue text-white rounded-2xl">
+              Submit
+            </button>
+          </div>
         </div>
-      </section>
-    </div>
-  </section>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
