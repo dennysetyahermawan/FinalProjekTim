@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;0,800;0,900;1,200;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 1000vh;
+}
+
+:before, :after{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titleText, h2 {
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+
+    span{
+        color: rgb(37, 37, 37);
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+   
+
+
+.service {
+    padding: 80px 0 80px;
+    min-height: 100vh;
+  }
+  .service .container .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .service .menu {
+    justify-content: center;
+    padding: 80px 0 0;
+    position: relative;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+  .service .menu:hover .row .card {
+    opacity: 0.2;
+  }
+  .service .menu .row {
+    background: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .service .menu .row .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background: #f5f5f5;
+    margin: 20px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    transition: 0.5s;
+  }
+  .service .menu .row .card:hover {
+    opacity: 1;
+  }
+  .service .menu .row .card .boxcard {
+    width: 340px;
+    border: 15px solid #f5f5f5;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+    background-color: #f5f5f5;
+  }
+  .service .menu .row .card .boxcard .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .service .menu .row .card .boxcard .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .service .menu .row .card .boxcard .text {
+    padding: 15px 0 5px;
+    display: flex;
+    overflow: hidden;
+  }
+  .service .menu .row .card .boxcard .text h3 {
+    font-weight: 400;
+    color: #111;
+  }
+  .service .menu .row .card .boxcard .text label #order {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 120px;
+    width: 40px;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 15px;
+    background: #f5f5f5;
+    padding: 4px 25px;
+    box-shadow: 2px 2px 3px #bebebe, -2px -2px 3px #fff;
+    transition: 0.5s;
+  }
+  .service .menu .row .card .boxcard #check, .service .menu .row .card .boxcard #check2, .service .menu .row .card .boxcard #check3 {
+    display: none;
+  }
+  .service .menu .row .card .boxcard #check:checked ~ .contentBx .content, .service .menu .row .card .boxcard #check2:checked ~ .contentBx .content, .service .menu .row .card .boxcard #check3:checked ~ .contentBx .content {
+    transform: translate(0px);
+  }
+  .service .menu .row .card .boxcard #check:checked ~ .contentBx::before, .service .menu .row .card .boxcard #check2:checked ~ .contentBx::before, .service .menu .row .card .boxcard #check3:checked ~ .contentBx::before {
+    transform: scaleX(1);
+    transform: transform 0.5s ease-in-out;
+    transform-origin: left;
+    overflow: hidden;
+  }
+  .service .menu .row .card .boxcard .contentBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .service .menu .row .card .boxcard .contentBx::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .service .menu .row .card .boxcard .contentBx .content {
+    position: relative;
+    z-index: 3;
+    transition: 0.5s;
+    transform: translateX(-400px);
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+  .service .menu .row .card .boxcard .contentBx .content h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col10 {
+    font-size: 0.5em;
+    font-weight: 300;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col10 h1 {
+    left: 0;
+    width: 100%;
+    font-weight: 400;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col10 input {
+    width: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+    width: 300px;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col50 {
+    font-size: 0.5em;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    padding-right: 10px;
+    left: 0;
+    transform: translateX(-2.5%);
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col50 .select select {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #f5f5f5;
+    color: #333;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    width: 100%;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col100 {
+    font-size: 0.5em;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    padding-right: 10px;
+    left: 0;
+    transform: translateX(-2.5%);
+  }
+  .service .menu .row .card .boxcard .contentBx .content .col100 .select select {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #f5f5f5;
+    color: #333;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    width: 100%;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .end {
+    width: 105%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .end label {
+    justify-content: center;
+    align-items: center;
+    transform: 0.5s;
+    width: 100%;
+    height: 100%;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .end label a {
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 4px 35px;
+    background-color: rgb(197, 6, 6);
+    box-shadow: 2px 2px 3px #bebebe -2px -2px -3px #fff;
+    transform: 0.5s;
+  }
+  .service .menu .row .card .boxcard .contentBx .content .end label button {
+    position: relative;
+    cursor: pointer;
+    margin-left: 15px;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    width: 75%;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 4px 15px;
+    background-color: rgb(42, 173, 16);
+    box-shadow: 2px 2px 3px #bebebe -2px -2px -3px #fff;
+    transform: 0.5s;
+  }
