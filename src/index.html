@@ -32,7 +32,7 @@
     <!-- Header Start -->
     <header>
         <!-- Navbar Start -->
-        <nav class="fixed w-full z-40 py-5 bg-black bg-opacity-70">
+        <nav class="fixed w-full z-40 py-5 bg-black bg-opacity-80">
             <section class="flex justify-between w-3/4 mx-auto">
                 <figure>
                     <img src="./assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo" class="w-40">
@@ -53,13 +53,18 @@
                 </div>
             </section>
 
-            <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
-                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
-                    <li><a href="./index.html" class="font-bold text-primary">Home</a></li>
+            <section id="navMobile" class="hidden lg:hidden mt-7 pb-5 border-t">
+                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center py-7">
+                    <li class="font-bold text-primary"><a href="./index.html">Home</a></li>
                     <li><a href="./pages/service/index.html">Service</a></li>
                     <li><a href="./pages/about/index.html">About</a></li>
                     <li><a href="./pages/contact/index.html">Contact</a></li>
                 </ul>
+
+                <div class="flex justify-between text-lg text-neutral-100 border-t px-7 sm:px-32 pt-7">
+                    <a href="./pages/auth/login/index.html" class="bg-primary hover:bg-secondary px-3 py-1">Sign In</a>
+                    <a href="./pages//auth/register/" class="border hover:text-primary px-3 py-1">Sign Up</a>
+                </div>
             </section>
         </nav>
         <!-- Navbar End -->
