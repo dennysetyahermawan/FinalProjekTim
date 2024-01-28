@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "proyek ini menggunakan Tailwind CSS untuk pengembangan antarmuka pengguna.",
   "main": "tailwind.config.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
