@@ -49,21 +49,168 @@
                     <button type="button" class="lg:hidden" onclick="handleButtonNav(event)">
                         <i class="fa-solid fa-bars sm:hidden text-neutral-100 text-3xl"></i>
                     </button>
-                    <button type="button" class="hidden lg:block text-white text-lg">Login</button>
+                    <a href="../auth/login/index.html" class="hidden lg:block text-neutral-100 text-lg">Sign In</a>
                 </div>
             </section>
 
-            <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
-                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+            <section id="navMobile" class="hidden lg:hidden mt-7 pb-5 border-t">
+                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center py-7">
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../service/index.html">Service</a></li>
                     <li><a href="../about/index.html">About</a></li>
                     <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
+
+                <div class="flex justify-between text-lg text-neutral-100 border-t px-7 sm:px-32 pt-7">
+                    <a href="../auth/login/index.html" class="bg-primary hover:bg-secondary px-3 py-1">Sign In</a>
+                    <a href="../auth/register/" class="border hover:text-primary px-3 py-1">Sign Up</a>
+                </div>
             </section>
         </nav>
     </header>
     <!-- Header End -->
+
+
+
+    <!-- Main Start -->
+    <main
+        class="flex flex-col lg:flex-row lg:justify-center lg:gap-24 px-5 sm:px-14 pt-28 sm:pt-32 lg:pt-40 pb-14 lg:h-screen bg-gray-800 text-neutral-100">
+        <!-- Profile Image -->
+        <section>
+            <figure class="text-center">
+                <i class="fa-solid fa-circle-user text-9xl"></i>
+                <figcaption class="mt-5">
+                    <h1>Anonymous</h1>
+                    <p>anonymous@gmail.com</p>
+                </figcaption>
+            </figure>
+            <details class="mt-5">
+                <summary class="list-none bg-primary hover:bg-secondary w-max mx-auto px-5 py-2 rounded-full">
+                    Update Profile Image
+                </summary>
+                <form method="post" class="mt-7 flex flex-col">
+                    <input type="file" name="profile" id="profile" accept="image/*" class="w-max mx-auto">
+                    <button type="submit" class="bg-primary hover:bg-secondary w-max mx-auto px-2 py-1">Update</button>
+                </form>
+            </details>
+        </section>
+
+        <!-- Detail Profile -->
+        <section class="mt-14 lg:mt-0">
+            <h1 class="flex items-center gap-3 text-2xl">
+                <hr class="w-14 border-t-2 border-primary">
+                Profile Settings
+            </h1>
+
+            <form method="post" class="mt-7 flex flex-col gap-5">
+                <section class="flex gap-2">
+                    <div class="w-1/2">
+                        <label for="firstname">Firstname :</label>
+                        <input type="text" id="firstname" name="firstname" value="anonym"
+                            class="text-gray-800 border outline-primary w-full px-3 py-1">
+                    </div>
+
+                    <div class="w-1/2">
+                        <label for="lastname">Lastname :</label>
+                        <input type="text" name="lastname" id="lastname" value="Anonymous"
+                            class="text-gray-800 border outline-primary w-full px-3 py-1">
+                    </div>
+                </section>
+
+                <div>
+                    <label for="phone">Phone :</label>
+                    <input type="text" id="phone" name="phone" value="+62 82134567"
+                        class="text-gray-800 border outline-primary w-full px-3 py-1">
+                </div>
+
+                <div>
+                    <label for="password">Password :</label>
+                    <input type="password" id="password" name="password" placeholder="********"
+                        class="text-gray-800 border outline-primary w-full px-3 py-1">
+                </div>
+
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" value="anonymous@gmail.com"
+                        class="text-gray-800 border outline-primary w-full px-3 py-1">
+                </div>
+
+                <div>
+                    <label for="address">Address :</label>
+                    <input type="text" id="address" name="address"
+                        value="Goatan Street, Northen District, Pantura States"
+                        class="text-gray-800 border outline-primary w-full px-3 py-1">
+                </div>
+
+                <div>
+                    <label for="postal">Postal Code :</label>
+                    <input type="number" id="postal" name="postal" value="12345"
+                        class="text-gray-800 border outline-primary w-full px-3 py-1">
+                </div>
+
+                <button type="submit"
+                    class="w-max ml-auto lg:text-lg lg:mt-10 bg-primary hover:bg-secondary px-3 py-1 rounded-lg">Save</button>
+
+            </form>
+
+        </section>
+    </main>
+    <!-- Main End -->
+
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="bg-gray-700 py-14 px-10 lg:px-24 flex flex-col lg:flex-row gap-10">
+            <div>
+                <figure class="bg-white px-7 py-4 rounded-full w-64">
+                    <img src="../../assets/logo/klin8-high-resolution-logo-transparent.svg" alt="klin8 logo"
+                        class="w-full">
+                </figure>
+                <p class="text-neutral-300 mt-5 lg:pe-24">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Asperiores iste aspernatur autem quaerat odit esse est provident molestias? Molestias id, ad cum
+                    obcaecati sed officia.</p>
+
+                <div class="text-4xl text-gray-700 flex gap-5 mt-5">
+                    <i class="fa-brands fa-instagram p-2 bg-neutral-300 rounded-full"></i>
+                    <i class="fa-regular fa-envelope p-2 bg-neutral-300 rounded-full"></i>
+                    <i class="fa-brands fa-whatsapp p-2 bg-neutral-300 rounded-full"></i>
+                </div>
+
+            </div>
+
+            <section class="flex flex-col sm:flex-row gap-5 sm:gap-20">
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">Company</h1>
+                    <ul class="text-neutral-300 mt-2 lg:mt-5 flex flex-col gap-2 sm:gap-5">
+                        <li><a href="#">Why Klin8</a></li>
+                        <li><a href="#"></a>Blog</li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">About</h1>
+                    <ul class="text-neutral-300 mt-2 lg:mt-5 flex flex-col gap-2 sm:gap-5">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h1 class="text-primary text-xl font-semibold">Meet Us</h1>
+                    <ul class="text-neutral-300 mt-2 lg:mt-5 w-3/4 flex flex-col gap-2 sm:gap-5">
+                        <li><i class="fa-brands fa-whatsapp"></i> +62 812345678</li>
+                        <li><i class="fa-regular fa-envelope"></i> info@klin8.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Goatan Street, Northen District, Pantura States
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+    </footer>
+    <!-- Footer End -->
 
 </body>
 

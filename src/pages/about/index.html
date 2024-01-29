@@ -49,17 +49,22 @@
                     <button type="button" class="lg:hidden" onclick="handleButtonNav(event)">
                         <i class="fa-solid fa-bars sm:hidden text-neutral-100 text-3xl"></i>
                     </button>
-                    <button type="button" class="hidden lg:block text-white text-lg">Login</button>
+                    <a href="../auth/login/index.html" class="hidden lg:block text-neutral-100 text-lg">Sign In</a>
                 </div>
             </section>
 
-            <section id="navMobile" class="hidden lg:hidden mt-7 pt-7 pb-5 px-5 border-t">
-                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center">
+            <section id="navMobile" class="hidden lg:hidden mt-7 pb-5 border-t">
+                <ul class="flex flex-col gap-5 text-neutral-100 text-lg text-center py-7">
                     <li><a href="../../index.html">Home</a></li>
                     <li><a href="../service/index.html">Service</a></li>
-                    <li><a href="../about/index.html" class="font-bold text-primary">About</a></li>
+                    <li class="font-bold text-primary"><a href="../about/index.html">About</a></li>
                     <li><a href="../contact/index.html">Contact</a></li>
                 </ul>
+
+                <div class="flex justify-between text-lg text-neutral-100 border-t px-7 sm:px-32 pt-7">
+                    <a href="../auth/login/index.html" class="bg-primary hover:bg-secondary px-3 py-1">Sign In</a>
+                    <a href="../auth/register/" class="border hover:text-primary px-3 py-1">Sign Up</a>
+                </div>
             </section>
         </nav>
     </header>
